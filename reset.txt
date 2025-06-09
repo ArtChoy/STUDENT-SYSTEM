@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - Student Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0e8ff 0%, #f5f7ff 100%);
+        }
+
+        .reset-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .reset-header {
+            margin-bottom: 2rem;
+        }
+
+        .reset-header h1 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4A90E2;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #4A90E2;
+        }
+
+        .reset-btn {
+            width: 100%;
+            padding: 12px;
+            background: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .reset-btn:hover {
+            background: #357ABD;
+        }
+
+        .back-link {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link a:hover {
+            color: #4A90E2;
+        }
+
+        .email-icon {
+            color: #4A90E2;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="reset-container">
+        <div class="reset-header">
+            <h1>Reset Password</h1>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="Email" value="student@gmail.com" readonly>
+            </div>
+
+            <button type="submit" class="reset-btn">Send Reset Link</button>
+        </form>
+
+        <div class="back-link">
+            <a href="#">Back to Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
